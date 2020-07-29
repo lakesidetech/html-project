@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 50px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+footer {
+  float: center;
+  background: chocolate;
+  padding: 30px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: xx-large;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>The Great Cities of Kenya</h1>
+  <p>Resize the browser window to see the responsive effect.</p>
+</div>
+
+<div class="topnav">
+  <a href="#">Nairobi</a>
+  <a href="#">Mombasa</a>
+  <a href="#">Kisumu</a>
+</div>
+
+<div class="row">
+  <div class="column">
+    <h2>Nairobi</h2>
+    <p>Nairobi is Kenya’s capital city. In addition to its urban core, the city has Nairobi National Park, a large game reserve known for breeding endangered black rhinos and home to giraffes, zebras and lions. Next to it is a well-regarded elephant orphanage operated by the David Sheldrick Wildlife Trust. Nairobi is also often used as a jumping-off point for safari trips elsewhere in Kenya.
+        .</p>
+  </div>
+  
+  <div class="column">
+    <h2>Mombasa</h2>
+    <p>DescriptionMombasa is a coastal city of Kenya along the Indian Ocean. The city is known as the white and blue city in Kenya. It is the country's oldest and second-largest city, with a population of about 1,208,333 people according to the 2019 census..</p>
+  </div>
+  
+  <div class="column">
+    <h2>Kisumu</h2>
+    <p>DescriptionKisumu is a Kenyan port city on Lake Victoria. It’s known for lakeside viewpoints at Dunga Hill Camp and Hippo Point. The Kisumu Impala Sanctuary shelters herds of impalas and zebras..</p>
+  </div>
+</div>
+<footer>
+    Footer
+</footer>
+</body>
+</html>
